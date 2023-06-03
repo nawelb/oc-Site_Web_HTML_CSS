@@ -70,8 +70,9 @@ section{
     width: 50%;
     margin:auto;
 }
-apropos h2{
-    margin-top: 20px;
+.apropos h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 nav, .footer{
     display:flex;
@@ -159,3 +160,27 @@ nav a{
 .conteneur-photo:hover .black-square{
     display: flex;
 }
+.section-table{
+    padding:0px;
+}
+
+table{
+    text-align: center;
+    border: solid 1px #8e86b5;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    margin:auto;
+    margin-bottom: 30px;
+}
+caption{
+    margin-bottom:50px;
+}
+td, th{
+    border: solid 1px #8e86b5;
+    padding:15px;
+}
+td{
+    padding:80px 20px;
+}
+
