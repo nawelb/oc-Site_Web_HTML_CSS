@@ -46,13 +46,19 @@ header, footer{
     color: white;
     background: linear-gradient(#8e86b5, #acaeed);
     border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
 .apropos{
     padding:50px;
     border-bottom: solid 1px;
     border-right: solid 1px;
     border-color: #8e86b5;
+    margin-bottom: 50px;
 }
+
 a:hover{
     text-decoration: underline;
 }
@@ -73,6 +79,14 @@ section{
 .apropos h2{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.portfolio-link{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    margin: auto;
 }
 nav, .footer{
     display:flex;
@@ -184,3 +198,98 @@ td{
     padding:80px 20px;
 }
 
+form{
+    color: white;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+}
+.inputs{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
+
+.input {
+    flex:1;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    width:50%;
+    margin:auto;
+    margin-top:30px;
+}
+@media screen and (max-width: 996px) {
+    h1{
+        font-size: 2em;
+    }
+    form, .section-accueil{
+        max-width: 1000px;
+    }
+    .section-table{
+        display: none;
+    }
+    section{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+   .logo img{
+    margin-bottom: 20px;
+   }
+    .section-accueil{
+        flex-direction: column-reverse;
+        padding: 20px;
+        margin:0px;
+        width:  fit-content;
+    }
+    .accueil-photo{
+        width: 100%;
+    }
+    .accueil-photo img{
+        width: 100%;
+    }
+    .accueil-detail{
+        text-align: center;
+    }
+    .accueil-detail p{
+        margin-bottom: 20px;
+    }
+
+    .grid-paysages, .grid-portraits, .grille-photo{
+        display: flex;
+        flex-direction: column;
+        margin:0px;
+    }
+    .grille-photo img{
+        width: 100%;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+   .inputs{
+    flex-direction: column;
+   }
+   .apropos{
+    width:50%;
+    margin: auto;
+    padding: 20px;
+   }
+}
